@@ -1,89 +1,148 @@
-# Quickstep - Backend Server.
 
-Real-time live location tracking app in Flutter - Backend server
 
-## Features and functionalities
+# 🚀 Quickstep - Backend Server
 
-- Real-time live location changing server side functionalities:
-- - User location's coordinates changing in real-time and emit to other users within the room
-- - Join and leave movement room
-- - Notify other users when user join or left movement room
-- - Retrieve current users within movement room
-- Chat messages (send or receive text message by your colleague in real-time)
-- Register user
-- Login user
-- Verifying account by email
-- Send or resend OTP by email
-- Expiring tokens after two hours
-- Creating profile
-- Create, delete or leave movement
-- Generating, clearing or receiving notifications
-- Accept or decline joining movement request
+A backend server for a real-time live location tracking application built with Flutter. This system enables seamless communication, movement tracking, and user interaction in real time.
 
-## Api & Demo
-- API url: [https://quickstep.up.railway.app/](https://quickstep.up.railway.app/)
+---
 
-- You can find full demo video of the client side on YouTube via: [https://www.youtube.com/watch?v=V_tnQ8OqVaw](https://www.youtube.com/watch?v=V_tnQ8OqVaw)
+## ✨ Key Features & Functionalities
 
-## Client
+### 📍 Real-Time Location Tracking
 
-- Flutter mobile application is available via this repository: [https://github.com/aimelive/quickstep_app](https://github.com/aimelive/quickstep_app)
+* Continuously updates user location coordinates in real time
+* Broadcasts location changes to users within the same movement room
+* Allows users to join or leave movement rooms
+* Notifies other participants when someone joins or exits
+* Fetches the list of active users in a movement room
 
-## API Documentation
+### 💬 Real-Time Chat
 
-You can find api documentation made with swagger here:
+* Send and receive instant text messages between users
+
+### 🔐 User Authentication & Account Management
+
+* User registration and login
+* Email verification system
+* Send or resend OTP via email
+* Access tokens expire after 2 hours for security
+
+### 👤 Profile Management
+
+* Create and manage user profiles
+
+### 🚶 Movement Management
+
+* Create, delete, or leave movement groups
+* Accept or decline movement join requests
+
+### 🔔 Notifications
+
+* Generate, receive, and clear notifications
+
+---
+
+## 🌐 API & Demo
+
+* **API Base URL:**
+  [https://quickstep.up.railway.app/](https://quickstep.up.railway.app/)
+
+* **Client Demo Video (YouTube):**
+  [https://www.youtube.com/watch?v=V_tnQ8OqVaw](https://www.youtube.com/watch?v=V_tnQ8OqVaw)
+
+---
+
+## 📱 Client Application
+
+The Flutter mobile app for this project is available here:
+[https://github.com/aimelive/quickstep_app](https://github.com/aimelive/quickstep_app)
+
+---
+
+## 📄 API Documentation
+
+Interactive API documentation (Swagger) is available at:
 
 ```bash
 https://quickstep.up.railway.app/api/v1/docs/
 ```
 
-## Run locally
+---
 
-- Clone this repository
+## ⚙️ Running the Project Locally
+
+### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/aimelive/quickstep-backend
 ```
-- Run the following command in your terminal to go into project root folder
+
+### 2. Navigate to Project Directory
+
 ```bash
 cd quickstep-backend
 ```
-- Create `.env` file in the root folder and fill out all variables specified in `.env.example` file
-- Run `npm install` to get all project dependencies
-- Run the following command in your terminal to launch localhost server
+
+### 3. Environment Setup
+
+* Create a `.env` file in the root directory
+* Add all required variables as specified in `.env.example`
+
+### 4. Install Dependencies
+
+```bash
+npm install
+```
+
+### 5. Start the Server
+
+* For production:
 
 ```bash
 npm start
 ```
-- - Or 
-```bash 
+
+* For development:
+
+```bash
 npm run dev
-``` 
-- - to launch localhost developement server on 3000 or the specified port
-- There you go, now you should be able to test the app by typing `https://localhost:[YOUT_PORT]/api/v1/` in your browser or other apps that can help you to make restful api requests like Postman, Thunder client, SOAP or etc.
-## Pre-requisites
+```
 
-- You should have the following to run this project locally:
-- - Node JS
-- - TypeScript
-- - MongoDB
-- - S3 Bucket
-- - Email Service Provider (Ex: gmail, in order to be able to send emails using nodemailer).
+The server will run on port **3000** or the port defined in your environment variables.
 
-### Technologies
+👉 Test the API using:
 
-- Socket.io
-- TypeScript/Node JS/Express
-- MongoDB
-- Agenda
-- AWS S3 Bucket
-- Nodemailer
-- Swagger
+```
+https://localhost:[YOUR_PORT]/api/v1/
+```
 
-### Known issue
+You can use tools like Postman, Thunder Client, or any REST API client for testing.
 
-- Signed url of the profile picture expires after 1 week since we're using free version of S3 bucket to upload and store profile images.
-  Message: `Signature version 4 presigned URLs must have an expiration date less than one week in the future`
-### Author
-- [Aime Ndayambaje](https://github.com/aimelive)
-### Contact Me
-- For any ideas, suggestions, improvements, guidance or questions regarding this project, please contact me via my email [aimendayambaje24@gmail.com](mailto:aimendayambaje24@gmail.com) or LinkedIn [Aime Ndayambaje](https://linkedin.com/in/aime-ndayambaje)
+---
+
+## 📌 Prerequisites
+
+Ensure you have the following installed before running the project:
+
+* Node.js
+* TypeScript
+* MongoDB
+* AWS S3 Bucket
+* Email Service Provider (e.g., Gmail for Nodemailer)
+
+---
+
+## 🛠️ Technologies Used
+
+* Socket.io (Real-time communication)
+* Node.js + Express
+* TypeScript
+* MongoDB
+* Agenda (Job scheduling)
+* AWS S3 (File storage)
+* Nodemailer (Email service)
+* Swagger (API documentation)
+
+---
+
+If you want, I can also convert this into a **GitHub README optimized version (with badges + visuals)** or a **presentation format for viva/project submission** 👍
